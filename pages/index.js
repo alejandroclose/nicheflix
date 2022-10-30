@@ -7,7 +7,6 @@ import Navbar from "../components/navbar";
 import LinkCards from "../components/linkCards";
 
 export default function Home(props) {
-  console.log("props", props);
   return (
     <div className="bg-black h-screen">
       <Head>

@@ -26,7 +26,7 @@ export default function Category(props) {
       <div className="mb-2">
         {props.specificCategoryData.sub.map((genre) => {
           return (
-            <li className="list-none m-4">
+            <li key={genre.id} className="list-none m-4">
               <Link href={genre.url} psasHref={true}>
                 <a target="_blank" className="text-decoration-line: underline">
                   {genre.genre}
