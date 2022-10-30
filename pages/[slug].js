@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  // Fetch necessary data for the blog post using params.id
+  // Fetch necessary data
   const itemSlug = context.params?.slug
   const data = await getCategoryData()
   const foundCat = data.categories.find((item) => itemSlug === item.slug)

@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { getCategoryData } from "../lib/categories";
 
 import Navbar from "../components/navbar"
 import LinkCards from "../components/linkCards"
 
-export default function Home() {
+export default function Home(props) {
+  console.log('props',props)
   return (
     <>
       <Head>
@@ -14,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      <LinkCards />
+      <LinkCards data={props.data}/>
      
       <footer className={styles.footer}>
         <a
@@ -30,4 +32,15 @@ export default function Home() {
       </footer>
     </>
   )
+}
+
+export async function getStaticProps() {
+  // Fetch necessary data
+  const data = await getCategoryData()
+
+  return{
+    props: {
+      data: data
+    }
+  }
 }
