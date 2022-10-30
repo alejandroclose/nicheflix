@@ -9,7 +9,7 @@ import LinkCards from "../components/linkCards"
 export default function Home(props) {
   console.log('props',props)
   return (
-    <div className="bg-black  h-screen">
+    <div className="bg-black h-screen">
       <Head>
         <title>Nicheflix | Find your next binge</title>
         <meta name="description" content="Find your next binge on Netflix's hidden curated categories" />

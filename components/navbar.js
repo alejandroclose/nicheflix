@@ -1,7 +1,5 @@
-import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 const user = {
   name: 'Tom Cook',
@@ -33,9 +31,9 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-700 lg:px-8">
             <div className="relative flex h-16 justify-center">
               <div className="relative z-10 flex px-2 lg:px-0">
-                <div className="flex items-center text-red-700 text-3xl font-bold">
-                  Nicheflix
-                </div>
+                <Link href="/">
+                  <div className="flex items-center text-red-700 text-3xl font-bold">Nicheflix</div>
+                </Link>
               </div>
               {/* <div className="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
                 <div className="w-full sm:max-w-xs">
