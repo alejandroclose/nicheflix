@@ -28,7 +28,7 @@ export default function Home(props) {
         <a
           href="https://github.com/alejandroclose/nicheflix"
           target="_blank"
-          rel=""
+          rel="noreferrer noopener"
           className="text-xs text-gray-400"
         >
           Made in Barcelona with ❤️
