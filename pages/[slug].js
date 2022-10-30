@@ -18,7 +18,7 @@ export default function Category(props) {
       <Navbar />
       <Link href={props.specificCategoryData.url} psasHref={true}>
         <h1>
-          <a target="_blank" className="text-xl">
+          <a target="_blank" rel="noreferrer noopener" className="text-xl">
             {props.specificCategoryData.genre}
           </a>
         </h1>
@@ -28,7 +28,7 @@ export default function Category(props) {
           return (
             <li key={genre.id} className="list-none m-4">
               <Link href={genre.url} psasHref={true}>
-                <a target="_blank" className="text-decoration-line: underline">
+                <a target="_blank" rel="noreferrer noopener" className="text-decoration-line: underline">
                   {genre.genre}
                 </a>
               </Link>
