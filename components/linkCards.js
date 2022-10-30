@@ -1,10 +1,10 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function LinkCards(props) {
-  console.log(props.data.categories)
+  console.log(props.data.categories);
   const map = props.data.categories.map((cat) => {
-    console.log(cat)
-  })
+    console.log(cat);
+  });
   return (
     <div className="flex flex-wrap justify-center bg-black">
       {props.data.categories.map((person) => (
@@ -16,17 +16,24 @@ export default function LinkCards(props) {
             <div className="h-10 w-10 rounded-full">{person.emoji}</div>
           </div>
           <div className="min-w-0 flex-1">
-            <Link key={person.id} href={person.slug} className="focus:outline-none">
+            <Link
+              key={person.id}
+              href={person.slug}
+              className="focus:outline-none"
+            >
               <div>
-              <span className="absolute inset-0" aria-hidden="true" />
-              <p className="text-sm font-medium text-gray-400">{person.genre}</p>
-              <p className="truncate text-sm text-gray-400">({person.sub.length})</p>
+                <span className="absolute inset-0" aria-hidden="true" />
+                <p className="text-sm font-medium text-gray-400">
+                  {person.genre}
+                </p>
+                <p className="truncate text-sm text-gray-400">
+                  ({person.sub.length})
+                </p>
               </div>
-              
             </Link>
           </div>
         </div>
       ))}
     </div>
-  )
+  );
 }
