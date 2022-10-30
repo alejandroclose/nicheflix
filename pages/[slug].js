@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { getCategoryData } from "../lib/categories";
 import Navbar from '../components/navbar'
+import Link from 'next/link';
 
 export default function Category(props) {
 
@@ -17,6 +18,11 @@ export default function Category(props) {
     <>
       <Navbar />
       <h1>{props.specificCategoryData.genre}</h1>
+      <div>
+        {props.specificCategoryData.sub.map((genre) => {
+          return <li><Link href={genre.url} psasHref={true}><a target="_blank">{genre.genre}</a></Link></li>
+        })}
+      </div>
     </>
   );
 }

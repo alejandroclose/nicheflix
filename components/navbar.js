@@ -31,9 +31,9 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-700 lg:px-8">
-            <div className="relative flex h-16 justify-between">
+            <div className="relative flex h-16 justify-center">
               <div className="relative z-10 flex px-2 lg:px-0">
-                <div className="flex items-center text-red-700">
+                <div className="flex items-center text-red-700 text-3xl font-bold">
                   Nicheflix
                 </div>
               </div>
