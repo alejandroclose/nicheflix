@@ -11,14 +11,14 @@ export default function Home(props) {
         <title>Nicheflix | Find your next binge</title>
         <meta
           name="description"
-          content="Find your next binge on Netflix&apos;s hidden curated categories"
+          content="Discover TV series, movies, musicals and documentaries on hidden Netflix&apos;s curated categories"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <div className="md:px-20 bg-black flex flex-col justify-center items-center">
         <div className="text-gray-400 w-9/12 text-center m-2">
-          Click to find Netflix&apos;s hidden curated
+          Discover Netflix&apos;s hidden curated
           categories
         </div>
         <LinkCards data={props.data} />

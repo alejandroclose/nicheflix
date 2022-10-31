@@ -170,41 +170,6 @@
       "url": "https://netflix.com/browse/genre/783",
       "sub": [
         {
-          "id": 25,
-          "type": "Sub",
-          "emoji": "",
-          "genre": "Movies for ages 0 to 2",
-          "url": "https://netflix.com/browse/genre/6796"
-        },
-        {
-          "id": 26,
-          "type": "Sub",
-          "emoji": "",
-          "genre": "Movies for ages 2 to 4",
-          "url": "https://netflix.com/browse/genre/6218"
-        },
-        {
-          "id": 27,
-          "type": "Sub",
-          "emoji": "",
-          "genre": "Movies for ages 5 to 7",
-          "url": "https://netflix.com/browse/genre/5455"
-        },
-        {
-          "id": 28,
-          "type": "Sub",
-          "emoji": "",
-          "genre": "Movies for ages 8 to 10",
-          "url": "https://netflix.com/browse/genre/561"
-        },
-        {
-          "id": 29,
-          "type": "Sub",
-          "emoji": "",
-          "genre": "Movies for ages 11 to 12",
-          "url": "https://netflix.com/browse/genre/6962"
-        },
-        {
           "id": 30,
           "type": "Sub",
           "emoji": "",
