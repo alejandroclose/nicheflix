@@ -16,9 +16,9 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="px-20 bg-black flex flex-col justify-center items-center">
+      <div className="md:px-20 bg-black flex flex-col justify-center items-center">
         <div className="text-gray-400 w-9/12 text-center m-2">
-          Click on your favorite category to find Netflix&apos;s hidden curated
+          Click to find Netflix&apos;s hidden curated
           categories
         </div>
         <LinkCards data={props.data} />
